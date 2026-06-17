@@ -20,3 +20,17 @@
 #Part 3
 
   -The last part was AI integration in your application but I did not complete the Amazon Bedrock integration because I wanted to avoid using a paid model before fully understanding the pricing and billing setup. However, I understand the intended architecture: Lambda would send the cloud fact to Bedrock, Bedrock would use a foundation model like Claude to rewrite the fact in a more engaging style, and Lambda would return the enhanced response through the API.
+
+## Screenshots
+
+### Lambda Function and API Gateway
+![Lambda Function and API Gateway](Screenshot%202026-06-17%20150825.png)
+
+### Lambda Function Overview
+![Lambda Function Overview](Screenshot%202026-06-17%20150831.png)
+
+### DynamoDB Table With Facts
+![DynamoDB Table With Facts](Screenshot%202026-06-17%20150905.png)
+
+### API Returning JSON Response
+![API Returning JSON Response](Screenshot%202026-06-17%20150948.png)
