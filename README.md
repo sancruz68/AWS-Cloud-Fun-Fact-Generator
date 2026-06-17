@@ -23,7 +23,7 @@
 
 ## Screenshots
 
-### Lambda Function and API Gateway
+### Lambda Function Code
 ![Lambda Function and API Gateway](Screenshot%202026-06-17%20150825.png)
 
 ### Lambda Function Overview
