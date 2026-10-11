@@ -60,17 +60,33 @@ I decided not to implement this part because I wanted to better understand the p
 
 This integration remains a possible future improvement and is not part of the current application.
 
+
 ## Project Screenshots
 
 ### Lambda Function Code
-![Lambda Function and API Gateway](Screenshot%202026-06-17%20150825.png)
+
 Python code used to retrieve facts from DynamoDB and return a JSON response.
+
+![Lambda Function Code](lambda-function-code.png)
+
 ### Lambda Function Overview
-![Lambda Function Overview](Screenshot%202026-06-17%20150831.png)
+
 The Lambda function configured with API Gateway as a trigger.
-### DynamoDB Table With Facts
-![DynamoDB Table With Facts](Screenshot%202026-06-17%20150905.png)
+
+![Lambda Function Overview](lambda-api-gateway.png)
+
+### DynamoDB Table
+
 The CloudFacts table containing the facts used by the application.
+
+![DynamoDB Table](dynamodb-table.png)
+
+### API Response
+
+A successful API request returning a random cloud fact in JSON format.
+
+![API Response](api-response.png)
+
 
 ## What I Learned
 
