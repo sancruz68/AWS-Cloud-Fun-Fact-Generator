@@ -14,6 +14,9 @@ Amazon DynamoDB: Stores the cloud facts.
 
 AWS Identity and Access Management (IAM): Gives the Lambda function permission to read data from DynamoDB.
 
+
+<img width="905" height="285" alt="image" src="https://github.com/user-attachments/assets/596eb2c3-d964-4582-98cd-44cd381bf8af" />
+
 ## How It Works
 
 A user sends a request to the API Gateway endpoint.
