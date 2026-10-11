@@ -1,10 +1,10 @@
-AWS Cloud Fun Fact Generator
+## AWS Cloud Fun Fact Generator
 
 This is a hands-on AWS project I built to better understand how different AWS services work together.
 
 The application returns a random fact about AWS or cloud computing through an HTTP API. I started by storing the facts directly in a Python Lambda function, then moved them into DynamoDB so I could add or update facts without having to change the Lambda code each time.
 
-AWS Services Used
+## AWS Services Used
 
 AWS Lambda (Python): Runs the code that retrieves and returns a random cloud fact.
 
@@ -14,7 +14,7 @@ Amazon DynamoDB: Stores the cloud facts.
 
 AWS Identity and Access Management (IAM): Gives the Lambda function permission to read data from DynamoDB.
 
-How It Works
+## How It Works
 
 A user sends a request to the API Gateway endpoint.
 
@@ -24,9 +24,9 @@ Lambda scans the DynamoDB table and randomly selects a cloud fact.
 
 Lambda returns the selected fact as a JSON response through API Gateway.
 
-Building the Project
+## Building the Project
 
-Part 1 — AWS Lambda and API Gateway
+## Part 1 — AWS Lambda and API Gateway
 
 I first created a Lambda function using Python and added several AWS fun facts directly into the code.
 
@@ -36,7 +36,7 @@ Once I confirmed that everything worked, I created an HTTP API using Amazon API 
 
 This allowed the function to be triggered through an HTTP request instead of only testing it inside the AWS Management Console.
 
-Part 2 — DynamoDB and IAM
+## Part 2 — DynamoDB and IAM
 
 The next step was moving the cloud facts out of the Lambda function and into a DynamoDB table.
 
@@ -50,7 +50,7 @@ Finally, I tested the API Gateway endpoint again and confirmed that the updated 
 
 The main reason I made this change was so I could add new facts directly into DynamoDB without having to edit and redeploy the Lambda function every time.
 
-Part 3 — Amazon Bedrock (Not Implemented)
+## Part 3 — Amazon Bedrock (Not Implemented)
 
 The final part I considered was integrating Amazon Bedrock to make the returned facts more engaging using AI.
 
@@ -60,7 +60,7 @@ I decided not to implement this part because I wanted to better understand the p
 
 This integration remains a possible future improvement and is not part of the current application.
 
-## Screenshots
+## Project Screenshots
 
 ### Lambda Function Code
 ![Lambda Function and API Gateway](Screenshot%202026-06-17%20150825.png)
@@ -72,7 +72,7 @@ The Lambda function configured with API Gateway as a trigger.
 ![DynamoDB Table With Facts](Screenshot%202026-06-17%20150905.png)
 The CloudFacts table containing the facts used by the application.
 
-What I Learned
+## What I Learned
 
 This project helped me get more comfortable working with AWS services together rather than just learning about them individually.
 
@@ -90,7 +90,7 @@ Troubleshooting and testing API responses.
 
 It also helped me understand why separating application code from stored data can make an application easier to update.
 
-Future Improvements
+## Future Improvements
 
 There are a few things I'd like to revisit as I continue working with AWS:
 
