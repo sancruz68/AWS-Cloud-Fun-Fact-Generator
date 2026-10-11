@@ -137,3 +137,12 @@ Explore Infrastructure as Code for deploying the application.
 Revisit Bedrock integration after understanding its pricing and usage costs.
 
 This was a learning project focused on gaining practical experience with AWS and understanding how these services communicate with each other.
+
+
+
+## Project Status
+
+This project was successfully built and tested in AWS. After completing it, I deleted the original Lambda function since I wasn't actively using it.
+
+The Python code included in this repository was reconstructed from a screenshot of my original implementation. It has not been redeployed or retested.
+
